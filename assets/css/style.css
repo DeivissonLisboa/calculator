@@ -1,0 +1,48 @@
+/* #202020 */
+/* #c6c7cb */
+/* #f99013 */
+
+#main {
+    display: block;
+    max-width: 400px;
+    margin: 50px auto 0 auto;
+    background-color: #c6c7cb;
+    border: 5px solid #202020;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#display {
+    height: 180px;
+    background-color: #202020;
+    color: white;
+    padding: 80px 30px 0px 10px;
+}
+
+h1 {
+    font-size: 80px !important;
+    margin-bottom: 0 !important;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    right: -15px;
+}
+
+.col,
+.col-6 {
+    padding: 0 !important;
+    height: 80px;
+    outline: 1px solid #9fa0a2;
+}
+
+h2 {
+    margin-top: 20px !important;
+    user-select: none;
+}
+
+.orange {
+    background-color: #fa8e12 !important;
+    color: white;
+}
