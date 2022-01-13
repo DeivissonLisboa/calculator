@@ -97,6 +97,10 @@ document.getElementById("zero").onclick = () => {
         displayText.innerText = displayBuffer;
     }
 };
+document.getElementById("dot").onclick = () => {
+    displayBuffer += ".";
+    displayText.innerText = displayBuffer;
+};
 
 // Iguals
 document.getElementById("igual").onclick = () => {
