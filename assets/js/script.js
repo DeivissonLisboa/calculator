@@ -1,5 +1,6 @@
 // Display
 const displayText = document.getElementById("displayText");
+let displayScaleCounter = 5;
 let displayBuffer = "";
 let operation = {};
 
@@ -7,6 +8,11 @@ let operation = {};
 const clear = (clearOperation = true) => {
     displayText.innerText = "0";
     displayBuffer = "";
+    displayScaleCounter = 6;
+    displayText.style.setProperty(
+        "--displayFontScale",
+        `${displayScaleCounter}em`
+    );
     if (clearOperation) {
         operation = {};
     }
@@ -127,5 +133,20 @@ document.getElementById("igual").onclick = () => {
         }
     } else {
         displayText.innerText = b;
+    }
+};
+
+// Formating display
+const buttons = document.getElementById("buttons");
+
+buttons.onclick = () => {
+    const displayScale =
+        getComputedStyle(displayText).getPropertyValue("--displayFontScale");
+    if (displayBuffer.length % 4 == 0 && parseInt(displayScale[0]) >= 3) {
+        displayScaleCounter--;
+        displayText.style.setProperty(
+            "--displayFontScale",
+            `${displayScaleCounter}em`
+        );
     }
 };
