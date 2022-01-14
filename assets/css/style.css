@@ -37,6 +37,11 @@ h1 {
     outline: 1px solid #9fa0a2;
 }
 
+.col:hover,
+.col-6:hover {
+    background-color: #b2b4b9;
+}
+
 h2 {
     margin-top: 20px !important;
     user-select: none;
@@ -45,4 +50,8 @@ h2 {
 .orange {
     background-color: #fa8e12 !important;
     color: white;
+}
+
+.orange:hover {
+    background-color: #df7e10 !important;
 }
